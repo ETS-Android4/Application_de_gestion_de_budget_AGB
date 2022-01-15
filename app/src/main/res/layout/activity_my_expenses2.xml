@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#00FFFFFF"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+                    <!--Food-->
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagefood"
+                            style="@style/Widget.Design.ScrimInsetsFrameLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00FFFFFF"
+                            android:src="@drawable/ic_food" />
+
+                        <TextView
+                            android:id="@+id/textfood"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="Food"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/foodTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--studies-->
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagestudies"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_studies" />
+
+
+                        <TextView
+                            android:id="@+id/textstudies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Studies"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/studiesTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+                    <!--Food-->
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagehome"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_shelter" />
+
+                        <TextView
+                            android:id="@+id/texthome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Home"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/homeTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--studies-->
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagetransport"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_car" />
+
+
+                        <TextView
+                            android:id="@+id/texttransport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Transport"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/transportTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageclothing"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00FFFFFF"
+                            android:src="@drawable/ic_clothes" />
+
+
+                        <TextView
+                            android:id="@+id/textclothing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Clothing"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/clothingTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--studies-->
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagetechnology"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_technology" />
+
+
+                        <TextView
+                            android:id="@+id/texttechnology"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Technology"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/technologyTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00FFFFFF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagehealth"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_health" />
+
+
+                        <TextView
+                            android:id="@+id/texthealth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Health"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/healthTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagegroceries"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_groceries" />
+
+
+                        <TextView
+                            android:id="@+id/textgraoceries"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Groceries"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/groceriesTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00FFFFFF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/imageothers"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_others" />
+
+
+                        <TextView
+                            android:id="@+id/textother"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Other"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/otherTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF" />
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagejeux"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#00ffffff"
+                            android:src="@drawable/ic_play" />
+
+
+                        <TextView
+                            android:id="@+id/textjeux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Entertainment"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/entertainementTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

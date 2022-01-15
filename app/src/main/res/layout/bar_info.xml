@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    app:cardCornerRadius="8dp"
+    android:layout_gravity="center"
+    tools:context=".statistics">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a bar chart that shows the evolution month by month of all your expenses depending on the sum of the transactions entered in 'My expenses'."
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/exitBtnBar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#055d65"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+
+            android:text="OK"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

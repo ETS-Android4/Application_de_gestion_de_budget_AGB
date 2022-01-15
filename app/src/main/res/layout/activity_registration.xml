@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/back">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="240dp"
+            android:layout_height="216dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/logof" />
+
+        <EditText
+            android:id="@+id/register_mail"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="0dp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/register_name"
+            android:hint="Full Name"
+            android:drawableLeft="@drawable/personh"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/register_age"
+            android:drawableLeft="@drawable/personh"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:drawableLeft="@drawable/ic_password"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonRegistration"
+            android:text="Register"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonBackSignIn"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF"
+            android:text="Already Registered!" />
+
+    </LinearLayout>
+</LinearLayout>

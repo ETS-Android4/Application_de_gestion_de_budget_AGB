@@ -1,0 +1,140 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".KnowMoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+
+        <Button
+            android:id="@+id/button_agb"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF"
+            android:text="What is AGB?" />
+
+        <Button
+            android:id="@+id/button_expenses"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF"
+            android:text="What could be your expenses?" />
+
+        <Button
+            android:id="@+id/button_income"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF"
+            android:text="What could be your sources of income?" />
+
+        <Button
+            android:id="@+id/button_work"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="30"
+            app:backgroundTint="#055D65"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp"
+            android:textColor="#FFFFFF"
+            android:text="How does our app work?" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/reponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+        
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
